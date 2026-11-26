@@ -27,9 +27,6 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Setup Android SDK & NDK
-        uses: android-actions/setup-android@v3
-
       - name: Locate Gradle Project & Build APK
         run: |
           GRADLEW_PATH=$(find . -name "gradlew" | head -n 1)
